@@ -40,6 +40,9 @@ http
     const metar = await page.evaluate((el) => el.innerHTML, elements[0]);
     console.log(metar);
 
+    await page.close();
+    await browser.close();
+
     res.end(metar);
   })
   .listen(process.env.PORT || 3000, process.env.HOST || "localhost");
