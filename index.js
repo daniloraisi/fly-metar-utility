@@ -42,4 +42,4 @@ http
 
     res.end(metar);
   })
-  .listen(3000, "0.0.0.0");
+  .listen(process.env.PORT || 3000, process.env.HOST || "localhost");
