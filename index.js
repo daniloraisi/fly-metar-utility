@@ -26,7 +26,7 @@ http
     }
 
     const expression =
-      "//code[@class='mt-3 bg-darkblue rounded py-2 px-3 text-white d-block']";
+      "//code[@class='text-white d-block']";
     const elements = await page.$x(expression);
 
     try {
